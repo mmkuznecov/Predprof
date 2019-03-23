@@ -62,11 +62,13 @@ if __name__ == "__main__":
         if a != None:
             try:
                 send_signal(ser,a)
+                time.sleep(12)
             except Exception as e:
                 print("Cannot send a signal")
         else:
             try:
                 steps()
+                time.sleep(0.5)
             except Exception as e:
                 print("Cannot send a signal")
         #print(a)
